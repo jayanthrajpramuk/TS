@@ -1,0 +1,4 @@
+List of issues faced duing installation :
+
+- package name and then dependency mismatch : clean workspace and set it up again
+- typescript compiler via cmd : install globally
