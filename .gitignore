@@ -4,5 +4,8 @@
 # idea
 /.idea
 
-# ignorning genrated .js files from typescript files
+# ignorning genrated .js files from typescript files (Initial)
 /app/*.js
+
+# genrated map/js files,  files
+/js

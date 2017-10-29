@@ -1,0 +1,4 @@
+- f7 : quixk help of commands
+- doskey /history >> filename.txt : sames the command typed in the session
+
+- SourceMapping will help to watch and reload dynamically.
