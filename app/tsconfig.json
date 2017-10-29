@@ -2,7 +2,8 @@
   "extends": "../tsconfig.base",
 
   "compilerOptions": {
-    "removeComments": true
+    "removeComments": true,
+    "strictNullChecks": true
   },
   "include": [
     "./**/*"    //this is for TS extension

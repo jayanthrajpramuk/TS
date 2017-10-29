@@ -5,3 +5,15 @@
 
 - http-server , lite-server they automatically detects free port then sets up the configaration.
 
+- explicit type annotation is recomended, instead of leaving it to compiler.
+
+- template literal in ES5 --> this is used to evaluating expression. using backtick , ${}
+
+- strct null check => makes it cumpulsory to define , that the variable type should be defined as well before using it.
+
+- object is possibly null --> HTMLElement | null
+using ! operator , which removes null from valid type.
+
+- concept of TypeAnalysis : compiler always checks our code and then assigns nearest type possible. But it is always constrained to initial declaration.
+
+- ? here implies it is optional when defining functio parameteres.
