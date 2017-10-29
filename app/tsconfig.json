@@ -1,0 +1,10 @@
+{
+  "extends": "../tsconfig.base",
+
+  "compilerOptions": {
+    "removeComments": true
+  },
+  "include": [
+    "./**/*"    //this is for TS extension
+  ]
+}
