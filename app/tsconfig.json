@@ -6,6 +6,6 @@
     "strictNullChecks": true
   },
   "include": [
-    "./**/*"    //this is for TS extension
+    "./**/*"    //this is for all TS extension
   ]
 }

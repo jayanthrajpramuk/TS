@@ -14,6 +14,14 @@
 - object is possibly null --> HTMLElement | null
 using ! operator , which removes null from valid type.
 
-- concept of TypeAnalysis : compiler always checks our code and then assigns nearest type possible. But it is always constrained to initial declaration.
+- TypeAnalysis:concept => compiler always checks our code and then assigns nearest type possible. But it is always constrained to initial declaration.
 
 - ? here implies it is optional when defining functio parameteres.
+
+- noImplicitany:concept --> this will make sure we have to define a type for function parameter. could also be null
+
+- check if the variable is html or htmlinputelem.
+    then check if it can be null
+        then make the docm operation
+
+- to match parameters we have 2 options. 1 is default value , other one is option
