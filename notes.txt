@@ -25,3 +25,5 @@ using ! operator , which removes null from valid type.
         then make the docm operation
 
 - to match parameters we have 2 options. 1 is default value , other one is option
+
+- Interfaces in type script is a design time tool. if we run the Interface we wont get any source code. But classes produces real time JS code.

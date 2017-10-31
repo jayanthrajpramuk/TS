@@ -1,6 +1,14 @@
 /**
  * Created by a028515 on 28-10-2017.
  */
+
+///<reference path="player.ts"/>
+///<reference path="result.ts"/>
+///<reference path="person.ts"/>
+
+
+
+
 function startGames() {
     let playerName: string | undefined = getInputValue("playername");
     playerName = checkPlayerName(playerName);
@@ -60,5 +68,23 @@ let logMessage = (message: string): void => {
 let logError = (messgae: string): void => console.error("Error");
 
 logMessage("Welcome from Arrow Function");
+
+let firstPlayer:Player = new Player();
+firstPlayer.name = "Jayanth";
+console.log(firstPlayer.formatName());
+
+let myResult : Results = {
+    playerName: "Jayanth",
+    score: 85,
+    problemCount: 9,
+    factor: 9
+}
+
+let player: Person = {
+    name: "Raj Pramuk",
+    //age?: number; // optional
+    formatName: () => "Hey Pramuk!"
+
+}
 
 document.getElementById("startGame")!.addEventListener('click',startGames);

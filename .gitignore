@@ -9,3 +9,6 @@
 
 # genrated map/js files,  files
 /js
+
+# genrated map files
+*.map

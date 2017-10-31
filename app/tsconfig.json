@@ -3,9 +3,10 @@
 
   "compilerOptions": {
     "removeComments": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "outFile": "../js/app.js"
   },
-  "include": [
-    "./**/*"    //this is for all TS extension
+  "files": [
+    "./app.ts"
   ]
 }
