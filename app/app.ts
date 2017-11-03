@@ -5,12 +5,14 @@
 ///<reference path="player.ts"/>
 ///<reference path="result.ts"/>
 ///<reference path="person.ts"/>
+///<reference path="Utility.ts"/>
+
 
 
 
 
 function startGames() {
-    let playerName: string | undefined = getInputValue("playername");
+    let playerName: string | undefined = Utility.getInputValue("playername");
     playerName = checkPlayerName(playerName);
     logPlayerName(playerName);
     postScore(100, playerName);
@@ -48,16 +50,7 @@ let scoreElem: HTMLElement = <HTMLElement>document.getElementById("postedScores"
 scoreElem!.innerText = `${score}-${playerName}`;
 }
 
-function getInputValue(elementId: string) : string | undefined {
 
-    let inputElement: HTMLInputElement = <HTMLInputElement>document.getElementById(elementId);
-    if(inputElement.value === '') {
-            return undefined;
-    } else {
-        return inputElement.value;
-    }
-
-}
 
 let logMessage = (message: string): void => {
     console.log("Regular Message : "+message)

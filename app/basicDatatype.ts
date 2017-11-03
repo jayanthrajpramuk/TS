@@ -89,6 +89,51 @@ let highScores = [];
 highScores = scored.filter((elem, index, scored) => {
                 return elem > 90;
 });
- console.log(highScores);
+
+console.log(highScores);
+
+// STATIC MEMBERS
+
+class staticClassEx {
+    public name: string;
+    static _variable: string;
+
+    constructor(){
+        console.log("This is in Static Class ex")
+    }
 
 
+    static getNameStatic():string {
+        return "cannot access this.name as name is instance variable"
+    }
+
+    getNameStatic():string {
+        return this.name;
+    }
+}
+
+staticClassEx._variable = "wow";
+staticClassEx.getNameStatic();
+
+let stInstance = new staticClassEx();
+// stInstance._variable  => not
+
+
+class parentEx extends  staticClassEx {
+    readonly  name: string;
+    constructor(inputName) {
+        super();
+        this.name = inputName;
+        console.log(this.name);
+    }
+
+}
+
+let pobj = new parentEx("Jayanth");
+
+
+
+// PUZZLE / CONCEPT
+
+var fuzzyName; // in JS , initially type will not be there. undefined. But in TS it will be assigned to any
+var fuzzyName2 = "Fuzzy"; // here ts and js will be string

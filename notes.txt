@@ -27,3 +27,5 @@ using ! operator , which removes null from valid type.
 - to match parameters we have 2 options. 1 is default value , other one is option
 
 - Interfaces in type script is a design time tool. if we run the Interface we wont get any source code. But classes produces real time JS code.
+
+- Type Inference : Concept => depending upon the type of the value being set , variable type will be set. ex: var num =5 , num is number. var num = "5" now num is string.
